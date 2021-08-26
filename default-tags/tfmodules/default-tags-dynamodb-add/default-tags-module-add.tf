@@ -8,5 +8,9 @@ resource "aws_dynamodb_table" "default-tags-module-add" {
     type = "S"
   }
 
-  tags = var.tags
+  tags = merge(
+    // Tagging Terraform module path helps maintenance
+    { terraform-module-path = path.module },
+    var.tags
+  )
 }
