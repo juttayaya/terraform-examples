@@ -1,3 +1,7 @@
+// Multiple provider in modules documentation
+// https://www.terraform.io/docs/language/meta-arguments/module-providers.html
+// https://www.terraform.io/docs/language/providers/configuration.html#alias-multiple-provider-configurations
+// https://www.terraform.io/docs/language/modules/develop/providers.html
 provider "aws" {
   alias = "aws"
 }
